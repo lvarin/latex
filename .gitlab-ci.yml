@@ -4,8 +4,7 @@ stages:
 
 CV:
         stage: latex
-        image:
-                - blang/latex:latest
+        image: blang/latex:latest
         script:
                 pdflatex agonzale.tex
         artifacts:
