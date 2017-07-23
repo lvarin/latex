@@ -1,0 +1,14 @@
+---
+stages:
+        - latex
+
+CV:
+        stage: latex
+        image:
+                - blang/latex:latest
+        script:
+                pdflatex agonzale.tex
+        artifacts:
+                paths:
+                        - "*.pdf"
+                expire_in: 1 week
