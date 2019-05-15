@@ -6,7 +6,8 @@ CV:
         stage: latex
         image: blang/latex:latest
         script:
-                pdflatex agonzale.tex
+                - pdflatex agonzale.tex
+                - pdflatex margarita.tex
         artifacts:
                 paths:
                         - "*.pdf"
