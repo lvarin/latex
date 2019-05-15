@@ -7,6 +7,15 @@ CV:
         image: blang/latex:latest
         script:
                 - pdflatex agonzale.tex
+        artifacts:
+                paths:
+                        - "*.pdf"
+                expire_in: 1 week
+
+CV2:
+        stage: latex
+        image: blang/latex:latest
+        script:
                 - pdflatex margarita.tex
         artifacts:
                 paths:
