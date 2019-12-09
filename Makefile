@@ -1,7 +1,4 @@
-all: alvaro rita
-
-rita: margarita.tex
-	pdflatex margarita.tex
+all: alvaro 
 	
 alvaro: agonzale.tex
 	pdflatex agonzale.tex
