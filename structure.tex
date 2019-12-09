@@ -30,7 +30,7 @@
 \usepackage{flowfram} % Required for the multi-column layout
 
 \usepackage{url} % URLs
-
+\usepackage{hyperref}
 \usepackage[usenames,dvipsnames]{xcolor} % Required for custom colours
 
 \usepackage{tikz} % Required for the horizontal rule
@@ -41,9 +41,9 @@
 \setlength{\columnsep}{\baselineskip} % Set the spacing between columns
 
 % Define the left frame (sidebar)
-\newflowframe{0.19\textwidth}{\textheight}{0pt}{0pt}[left]
+\newflowframe{0.24\textwidth}{\textheight}{0pt}{0pt}[left]
 \newlength{\LeftMainSep}
-\setlength{\LeftMainSep}{0.18\textwidth}
+\setlength{\LeftMainSep}{0.20\textwidth}
 \addtolength{\LeftMainSep}{1\columnsep}
 
 % Small static frame for the vertical line
@@ -59,7 +59,7 @@
 % Define the right frame (main body)
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
-\newflowframe{0.8\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+\newflowframe{0.72\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
 
 \pagestyle{empty} % Disable all page numbering
 

@@ -33,16 +33,22 @@
 % Comment out this figure block if you don't want a photo
 \small % Smaller font size
 Álvaro González \\ % Your name
-\url{alvaroga@gmail.com} \\ % Your email address
-\url{http://alvaroga.name}
-+358 40 81 27 118 \\ % Your phone number
+	\url{alvaroga@gmail.com} \\ % Your email address
+\url{http://alvaroga.name} \\ % Your website
+\href{tel:358408127118}{+358 40 81 27 118} \\ % Your phone number
 \Sep % Some whitespace
 \textbf{Address} \\
 Veturikuja 4 E 50 \\ % Address 1
-Tikkurila, Vantaa, 01300 \\ % Address 2
-FINLAND
+Vantaa, 01300 \\ % Address 2
+\Sep
 \textbf{Nationality} \\
 	Spanish \includegraphics{spain.png}\\ % Nationality
+\Sep
+\textbf{Languages} \\
+\includegraphics{spain.png} Spanish, C2 Native \\ 
+\includegraphics{uk.png} English, C1 Fluent \\
+\includegraphics{france.png} French, B1 Interm. \\
+
 \vfill % Whitespace under this block to push it up under the photo
 \end{flushright}
 }
@@ -103,24 +109,26 @@ I have worked with people from more than 10 European countries, from Spain to Fi
 
 \Sep % Extra white space after the end of a major section
 
-\CVSection{Technologies}{
+\CVSection{Main technologies I worked with}{
+\begin{itemize}
+\item Python, Django, Bash
+\item Puppet, Kubernetes, Openshift
+\item Jira, GIT, GitLab, Subversion, WebSVN, Trac
+\item Nginx, Apache, Docker, OAuth, PostgreSQL, Oracle, curl, openssl, TLS, Let's Encrypt, PaaS
+\item Centos, Red Hat Enterprise Linux, Scientific Linux, Fedora Atomic, Debian, Ubuntu
+\end{itemize}
+}
+\Sep
+\CVSection{Other technologies}{
 
 \begin{itemize}
-\item Python Django Bash Java Perl
-\item Quattor Puppet Ansible Kubernetes Openshift
-\item Jira Bamboo Gitlab Subversion CVS Flexnet Jenkins WebSVN Trac
-\item Nginx Apache Docker SAML OAuth PostgreSQL SQLite Oracle curl openssl Bootstrap PaaS
-\item  Centos Red Hat Enterprise Linux Scientific Linux Fedora Atomic Debian Ubuntu
+\item Java, Perl, Javascript, ReactJS
+\item Quattor, Ansible, HAProxy
+\item Bamboo, Gitlab, CVS, Flexnet, Jenkins
+\item SAML, SQLite, Bootstrap
 \end{itemize}
 }
 
-\CVSection{Education}
-
-\CVItem{Languages}
-{\begin{tabular}{p{0.3\textwidth} p{0.4\textwidth}}
-	\bluebullet Spanish \includegraphics{spain.png}, Native &  \bluebullet English \includegraphics{uk.png}, Fluent (C1) \\
-	\bluebullet French \includegraphics{france.png}, Intermediate (B1) \\
-\end{tabular}}
 
 \clearpage % Start a new page
 \userinformation % Print your information in the left column
@@ -131,6 +139,7 @@ I have worked with people from more than 10 European countries, from Spain to Fi
 %----------------------------------------------------------------------------------------
 
 
+\CVSection{Education}
 \CVItem{University}{
 \begin{itemize}
 	\item October 2000 - September 2004, \textit{Universidad de Oviedo, Spain}. Bachelor.
