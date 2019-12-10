@@ -3,4 +3,4 @@ language:   generic
 services:   docker
 
 script:
-- docker run -v $TRAVIS_BUILD_DIR:/data blang/latex:latest pdflatex *.pdf
+- docker run -v $TRAVIS_BUILD_DIR:/data blang/latex:latest pdflatex *.tex
